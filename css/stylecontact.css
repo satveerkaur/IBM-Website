@@ -1,0 +1,158 @@
+h1,h2,h3{
+  font-family: 'Montserrat',sans-serif;
+}
+p,a,legend,label{
+  font-family: 'Roboto',sans-serif;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  grid-template-areas:
+  "header header header header"
+  "main main main main"
+  "footer footer footer footer";
+  grid-template-rows: auto;
+}
+header{
+  grid-area: header;
+  height: 80px;
+}
+header>div{
+  display: flex;
+  background-color: rgba(192,192,192,0.5);
+  margin-right: 10px;
+}
+header>div>img{
+  height: 150px;
+}
+header>div>h1{
+  padding: 30px 10px 0px 300px;
+  text-align: center;
+}
+header>div>h1:hover{
+  color: #D15252;
+}
+header>nav{
+  height: 50px;
+  background-color: rgba(192,192,192,0.5);
+  margin: 10px;
+  box-shadow: 10px 10px 5px grey;
+}
+header>nav>ol{
+  display: flex;
+  padding-top: 15px;
+  justify-content: center;
+}
+header>nav>ol>li{
+  list-style: none;
+  padding: 0px 50px;
+  font-size: 20px;
+  color: #000;
+}
+header>nav>ol>li>a{
+  text-decoration: none;
+  color: #000;
+}
+header>nav>ol>li>a:hover{
+  color: #D15252;
+}
+main{
+  grid-area: main;
+  grid-template-areas:
+  "masthead masthead masthead masthead"
+  "contact contact contact contact";
+  grid-template-rows: auto;
+  padding-top: 140px;
+}
+.masthead{
+  grid-area: masthead;
+  background-image: url('../images/masthead1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.masthead>div{
+  background-color: rgba(192,192,192,0.5);
+  padding: 2% 5%;
+}
+.masthead>div>h2,h3{
+  color: #000;
+}
+.masthead>div>h2:hover,h3:hover{
+  color: #D15252;
+}
+.contact>div:first-child>h3{
+  background-color: rgba(192,192,192,0.5);
+  padding: 2% 5%;
+  text-align: center;
+  font-size: 25px;
+}
+form{
+  width: 300px;
+  margin: 50px 350px;
+}
+.contact{
+    background-image: url('../images/img-3.jpg');
+}
+.contactus>form>input,.contactus>form>textarea,.contactus>form>button{
+  width: 400px;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 2px solid #ccc;
+}
+#contactus{
+  background-color: rgba(192,192,192,0.5);
+  margin: 10px;
+}
+#btn:hover{
+  color: #D15252;
+}
+footer{
+  background-color: rgba(192,192,192,0.5);
+  margin: 10px;
+}
+.footer-1{
+  display: flex;
+}
+.footer-2>ul{
+  display: flex;
+  justify-content: center;
+}
+.footer-2>ul>li{
+  text-decoration: none;
+  list-style: none;
+  font-size:20px;
+  padding: 20px 30px;
+}
+.footer-2>ul>li>a{
+  text-decoration: none;
+  color: #000;
+}
+.footer-2>ul>li>a:hover{
+  color: #D15252;;
+}
+footer>h3{
+  padding: 30px 10px 20px 10px;
+  text-align: center;
+  background-color: rgba(192,192,192,0.5);
+  margin: 10px;
+  box-shadow: 10px 10px 5px grey;
+  font-size: 25px;
+}
+footer>h3:hover{
+  color: #D15252;
+}
+.footer-1>div>img{
+  height: 100px;
+  padding: 15px 15px;
+}
+.footer-1>div>p{
+  font-size: 25px;
+  padding: 25px 0px 25px 10px;
+  text-shadow: 1px 1px 2px grey;
+}
